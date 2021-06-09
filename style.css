@@ -1,0 +1,459 @@
+* {
+    box-sizing: border-box;
+}
+
+/* #temp0 {
+    display: none;
+} */
+
+.matches {
+    display: grid;
+    grid-gap: 2%;
+}
+
+.top {
+    background-color: rgb(116, 116, 235);
+    height: 40px;
+}
+
+.head {
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(116, 116, 235);
+}
+
+.container,.top {
+    margin-bottom: 5%;
+}
+
+.matches {
+    /* border: solid 1px rgb(0, 0, 245); */
+    border-top: none;
+}
+
+.Nothing {
+    grid-column: 1/6;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: red;
+}
+
+#text_for_stats {
+    margin: 5%;
+    margin-left: 8%;
+    width: 80%;
+    padding: 1%;
+}
+
+.stats_area {
+    border: solid 1px rgb(0, 0, 245);
+    border-top: none;
+    height: 120px;
+}
+
+.stats_entries {
+    margin-top: 200px;
+}
+
+#click_for_search {
+    padding: 2%;
+    margin-left: 32.3%;
+    cursor: pointer;
+}
+
+.button{
+    background-color: rgb(116, 116, 235);
+}
+
+
+.footer{
+    margin-top: 50px;
+}
+
+
+
+
+                        /*   STATS PAGE  */
+
+
+
+
+
+
+#temp2{
+    display: none;
+}
+
+.stats {
+    border: 1px solid rgb(0, 0, 245);
+}
+
+.topOfStats{
+    display: grid;
+}
+
+#playerName{
+    font-size: 2em;
+}
+
+#playerPhoto{
+    margin-left: 5%;
+}
+
+.table{
+    display: table;
+    font-size: 1.1em;
+}
+
+.row{
+    display: table-row;
+}
+
+.column{
+    display: table-cell;
+    padding: 1% 0%;
+}
+
+.key{
+    width: 20%;
+    /* padding-right: 17%; */
+}
+
+.value{
+    width: 55%;
+}
+
+.hr{
+    background-color: rgb(0, 0, 245);
+    height: 2px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.column_stats{
+    display: table-cell;
+    width: 14%;
+    border-bottom: 0.5px solid rgb(172, 167, 167);
+    border-right: 0.5px solid rgb(172, 167, 167);
+}
+
+.battingAndBowlingStats{
+    display: grid;
+    grid-gap: 1.9%;
+}
+
+.head1,.head2{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.head2{
+    border-left: 0.5px solid rgb(172, 167, 167);
+}
+
+.profile{
+    border-bottom: 1px solid rgb(0, 0, 245);
+    padding: 2%;
+    font-size: 1.1em;
+}
+
+.homeButton{
+    padding: 1%;
+    cursor: pointer;
+}
+
+
+
+                        /* Score */
+
+
+
+
+
+.scorecard{
+    height: 130px;
+    box-sizing: border-box;
+    /* background-color: rgb(243, 243, 243); */
+    box-sizing: border-box;
+    box-shadow: 0.5px 0.5px;
+    margin: 10px; 
+    padding: 20px;
+}
+
+.team{
+    margin-bottom: 3%;
+}
+
+.refresh{
+    float: right;
+    cursor: pointer;
+}
+
+.last{
+    border-right: none;
+}
+
+
+
+/* 
+   Imacs, Big desktop monitor.
+*/
+
+@media (min-width: 1281px) {
+    .matches {
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .stats_entries {
+        width: 25%;
+        margin-left: 35%;
+    }
+
+    .stats{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .topOfStats{
+        grid-template-columns: 30% 70%;
+    }
+
+    .photoAndName{
+        position: relative;
+        left: 15%;
+        grid-column: 1/2;
+    }
+
+    .aboutPlayer{
+        grid-column: 2/3;
+    }
+
+    .battingAndBowlingStats{
+        grid-template-columns: 49% 49%;
+    }
+
+    #battingStats,#bowlingStats{
+        margin: 0% 2.5%;
+    }
+
+    #battingStats{
+        grid-column: 1/2;
+    }
+
+    .profile_out{
+        width: 95%;
+        margin-left: 2.4%;
+    }
+
+    .homeButton{
+        margin: 10px 40%;
+    }
+}
+
+/* 
+   Laptops,Desktop monitors,ipad pros
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .matches {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .stats_entries {
+        width: 25%;
+        margin-left: 35%;
+    }
+
+    .stats{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .topOfStats{
+        grid-template-columns: 30% 70%;
+    }
+
+    .photoAndName{
+        position: relative;
+        left: 15%;
+        grid-column: 1/2;
+    }
+
+    .aboutPlayer{
+        grid-column: 2/3;
+    }
+
+    .battingAndBowlingStats{
+        grid-template-columns: 49% 49%;
+    }
+
+    #battingStats,#bowlingStats{
+        margin: 0% 2.5%;
+    }
+
+    #battingStats{
+        grid-column: 1/2;
+    }
+
+    .profile_out{
+        width: 95%;
+        margin-left: 2.4%;
+    }
+
+    .homeButton{
+        margin: 10px 40%;
+    }
+}
+
+
+/* 
+    portrait tablets and ipads
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .matches {
+        grid-template-columns: auto auto auto;
+    }
+    .top, .container {
+        grid-column: 1/4;
+    }
+    .stats_entries {
+        width: 40%;
+        margin-left: 24%;
+    }
+
+    .topOfStats{
+        grid-template-columns: 30% 70%;
+    }
+
+    .photoAndName{
+        position: relative;
+        left: 15%;
+        grid-column: 1/2;
+    }
+
+    .aboutPlayer{
+        grid-column: 2/3;
+    }
+
+    .battingAndBowlingStats{
+        grid-template-columns: 49% 49%;
+    }
+
+    #battingStats,#bowlingStats{
+        margin: 0% 2.5%;
+    }
+
+    /* #battingStats{
+        grid-column: 1/2;
+    } */
+
+    .profile_out{
+        width: 95%;
+        margin-left: 2.4%;
+    }
+
+    .homeButton{
+        margin: 10px 40%;
+    }
+}
+
+/* 
+  Landscape for mobiles and tablets
+  */
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+    .matches {
+        grid-template-columns: auto auto auto;
+    }
+
+    .stats_entries {
+        width: 50%;
+        margin-left: 22%;
+    }
+
+    .topOfStats{
+        grid-template-columns: 30% 70%;
+    }
+
+    .photoAndName{
+        position: relative;
+        top: 15%;
+        grid-column: 1/2;
+    }
+
+    #playerPhoto{
+        width: 70%;
+    }
+
+    #playerName{
+        font-size: 1.5em;
+    }
+
+    .aboutPlayer{
+        grid-column: 2/3;
+    }
+
+    .battingAndBowlingStats{
+        grid-template-columns: 100%;
+    }
+
+    #battingStats,#bowlingStats{
+        margin: 0% 2.5%;
+    }
+
+    #battingStats{
+        grid-column: 1/2;
+    }
+
+    .profile_out{
+        width: 95%;
+        margin-left: 2.4%;
+    }
+
+    .homeButton{
+        margin: 10px 30%;
+    }
+}
+
+@media (max-width: 614px) {
+    .footer{
+        font-size: 1em;
+    }
+}
+
+/* 
+   Mostly all smartphones
+  */
+
+@media (max-width: 480px) {
+    .matches {
+        grid-template-columns:auto;
+    }
+
+    .stats{
+        grid-template-columns: auto;
+    }
+
+    .photoAndName{
+        margin-left: 10%;
+    }
+
+    #playerPhoto{
+        margin-left: 11%;
+    }
+
+    .homeButton{
+        margin: 10px 28%;
+    }
+}
+
+@media (max-width: 296px){
+    .head1,.head2{
+        font-size: 0.7em;
+    }
+    .homeButton{
+        margin: 10px 22%;
+    }
+}
